@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute DIV</title>
+    <style>
+        div.relativo{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            left: 25px;
+            border: 3px solid magenta;
+        }
+        div.absoluto{
+            position: absolute;
+            top: 50px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid mediumvioletred;
+        }
+    </style>
+</head>
+<body>
+    <h2>Posición del DIV: absolute</h2>
+    <p>Un elemento con posición absoluta se ubica en relación al elememto previo mas cercano
+        (en vez de ubicarse relativo a la pantalla, similar al fijoa)
+    </p>
+    <div class="relativo">
+        Este elemento tiene una posición relativa 
+        <div class="absoluto">
+            Este elemento DIV tiene una posicion absoluta 
+            (en relación al DIV donde esta contenido)
+        </div>
+    </div>
+</body>
+</html>

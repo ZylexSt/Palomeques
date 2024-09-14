@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/top.jpg" type="image/top-icon">
+    <title>Ejemplo de Layout</title>
+    <style type="text/css">
+        h1{
+            color: blue;
+            text-align: center;
+        }
+        h2{
+            color: green;
+            text-align: center;
+        }
+        h4{
+            color: red;
+            font-size: 150%;
+        }
+        .leftPanel{
+            position: absolute;
+            left: auto;
+            right: auto;
+        }
+        .middlePanel{
+            position: absolute;
+            vertical-align: middle;
+            left: 30%; right: 30%; margin: auto;
+            left: 0; right: 0;
+            width: 650px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-top-width: 0px;
+            border-bottom-width: 0px;
+            border-style: solid;
+            border-color: blue;
+        }
+        .rightPanel{
+            position: absolute;
+            left: auto; right: auto;
+            font-weight: bold;
+
+        }
+        .footer{
+            position: absolute;
+            vertical-align: middle;
+            left: 30%; right: 30%; margin: auto;
+            left: 0; right: 0;
+            width: 650px;
+            text-align: center;
+            bottom: 0; height: 45px;  
+        }
+        .Link{
+            font-size: 120%;
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Aplicaciones Web</h1>
+        <h2>Ejemplo básico de layout de página</h2>
+        <hr/>
+    </div>
+    <div class="leftPanel">
+    </div>
+    <div class="middlePanel">
+        <ul type="square">
+            <li>
+                <h3> 
+                    <a href="EjLayoutDIVa.html" target="_self" class="Link">Ejemplo del primer</a>
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    <a href="EjLayoutDIVb.html" target="_self" class="Link">Ejemplo del segundo</a>
+                </h3>
+            </li>
+            <li><h3>Parrafo normal de texto con encabezado "h3"</h3></li>
+            <li><h4>Parrafo aumentado con texto con encabezado "h4"</h4></li>
+        </ul>
+    </div>
+    <div class="rightPanel"></div>
+    <div class="footer">
+        <p>Grupo TDM31 - Docente: Elixena Ibarra- &#169;2024</p>
+    </div>
+</body>
+</html>

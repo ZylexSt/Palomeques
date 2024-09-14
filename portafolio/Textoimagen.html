@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto sobre imagen</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .topLeft{
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+        .topRight{
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+        .bottomRight{
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+        .bottomLeft{
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+        .center{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+        .img{
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Texto sobre imagen</h2>
+    <p>Colocando texto en distintas posiciones sobre una imagen </p>
+    <div class="container">
+        <img class="img" src="image/chihuahua.jpg" alt="Chihuahua" width="auto" height="auto">
+        <div class="topLeft">Superior izquierda</div>
+        <div class="topRight">Superior derecha</div>
+        <div class="bottomLeft">Inferior izquierda</div>
+        <div class="bottomRight">Inferior derecha</div>
+        <div class="center">Centrado</div>
+
+    </div>
+</body>
+</html>

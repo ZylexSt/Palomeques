@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina para Trabajos</title>
+    <style type="text/css">
+        .contenedortodo{
+            border: 1px;
+            width: 98%; min-width: 700px;
+            height: 99%; min-height: 600px;
+            position: absolute;
+            border-radius: 20px;
+            background-color: white;
+            vertical-align: middle;
+        }
+
+        .renglones{
+            position: absolute;
+            left: 50%;
+            top: 4%;
+            transform: translate(0.7%, -18%);
+            width: 99%; min-width: 700px;
+            height: 20%; min-height: 90px;
+            left: auto;
+            right: auto;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: gray;
+            opacity: 0.3;
+        }
+
+        .header{
+            position: absolute;
+            left: 50%;
+            top: 23%;
+            transform: translate(-50%, 55.5%);
+            width: 99%;
+            height: 40%; min-height: 48px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: green;
+            opacity: 0.95; z-index: 10;
+        }
+
+        .navegacion{
+            position: absolute;
+            left: 50%; top: 65%;
+            transform: translate(-50%, -44%);
+            width: 99%;
+            height: 55%; min-height: 48px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: blue;
+            opacity: 0.95; z-index: 10;
+        }
+
+        .principal{
+            position: absolute;
+            left: 50%; top: 36%;
+            transform: translate(0.7%, -19%);
+            width: 99%; min-width: 700px;
+            height: 78%; min-height: 370px;
+            left: auto;
+            right: auto;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: gray;
+            opacity: 0.3;
+            vertical-align: middle;
+        }
+
+        .columnaIzq{
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: green;
+            opacity: 0.6; z-index: 10;
+            width: 17%; margin-left: 2px;
+            transform: translate(0.7%, 0.5%);
+            height: 98%; min-height: 300px;
+        }
+
+        .contenido{
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: blue;
+            opacity: 0.6; z-index: 10;
+            left: 15%; top: 80%; width: 62%;
+            transform: translate(29.5%, -99.5%);
+            height: 98%; min-height: 300px;
+        }
+
+        .columnaDer{
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: green;
+            opacity: 0.6; z-index: 10;
+            width: 18%; margin-left: 4px;
+            transform: translate(445%, -199.5%);
+            height: 98%; min-height: 300px;
+            vertical-align: middle;
+        }
+
+        .minipanel{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0.5%);
+            width: 97%;
+            height: 79%; min-height: 350px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: cyan;
+            opacity: 0.8; z-index: 20;
+        }
+        .footer{
+            position: absolute;
+            left: 50%; top: 96%;
+            transform: translate(-50%, -78%);
+            width: 97%;
+            height: 19%; min-height: 80px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: black;
+            opacity: 0.8; z-index: 20;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedortodo">
+        <div class="renglones">
+            <div class="header"></div>
+            <div class="navegacion"></div>
+        </div>
+        
+        <div class="principal">
+            <div class="columnaIzq"></div>
+            <div class="contenido"></div>
+            <div class="columnaDer">
+                <div class="minipanel"></div>
+                <div class="footer"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
