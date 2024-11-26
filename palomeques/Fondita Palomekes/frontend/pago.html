@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Pedido - Palomeke's Inn</title>
+    <link rel="icon" href="1111.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Palomeke's Inn</h1>
+        </div>
+    </header>
+    <main>
+        <div class="menu-back-container">
+            <a href="productos.html" class="btn-back">Regresar a Menú</a>
+        </div>
+        <section class="order-section">
+            <h2>Confirmar Pedido</h2>
+            <div class="order-details">
+                <div class="order-info">
+                    <!-- Este contenido será dinámico -->
+                </div>
+                <div class="delivery-info">
+                    <h3>Ubicación de Entrega</h3>
+                    <p>Selecciona tu ubicación</p>
+                    <div class="map-placeholder1">Mapa interactivo aquí (Backend)</div>
+                </div>
+            </div>
+            <div class="payment-section">
+                <h3>Pago</h3>
+                <p>Total a pagar: <strong>$120 MXN</strong></p>
+                <button class="btn pay-btn">Pagar Ahora</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container"></div>
+    </footer>
+
+    <script>
+        // Función para obtener parámetros de la URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                producto: params.get('producto') || "Producto desconocido",
+                descripcion: params.get('descripcion') || "Descripción no disponible",
+                proteinas: params.get('proteinas') || "N/A",
+                calorias: params.get('calorias') || "N/A",
+                grasas: params.get('grasas') || "N/A",
+                carbohidratos: params.get('carbohidratos') || "N/A"
+            };
+        }
+
+        // Obtener parámetros y actualizar el contenido
+        const detalles = getQueryParams();
+        document.querySelector('.order-info').innerHTML = `
+            <h3>Detalles del Pedido</h3>
+            <p><strong>Desayuno:</strong> ${detalles.producto}</p>
+            <p><strong>Descripción:</strong> ${detalles.descripcion}</p>
+            <h4>Declaración Nutrimental</h4>
+            <ul>
+                <li><strong>Proteínas:</strong> ${detalles.proteinas}</li>
+                <li><strong>Calorías:</strong> ${detalles.calorias}</li>
+                <li><strong>Grasas:</strong> ${detalles.grasas}</li>
+                <li><strong>Carbohidratos:</strong> ${detalles.carbohidratos}</li>
+            </ul>
+        `;
+    </script>
+</body>
+</html>

@@ -1,0 +1,710 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #F4E7FB, #F2DDDC);
+    color: #444;
+    line-height: 1.6;
+}
+/* Footer */
+footer {
+    background: #C3C7F4;
+    color: #444;
+    padding: 1.5rem 0;
+    text-align: center; /* Centra todo el contenido del footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre el logo y el texto */
+    flex-wrap: wrap; /* Permite que el logo y texto se ajusten en pantallas pequeñas */
+}
+
+footer img {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #C8A8E9;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 400%;
+    font-weight: 600;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0.5rem 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F6BCBA;
+}
+
+nav ul li a.active {
+    color: #ffffff; /* Resalta el enlace activo */
+    border-bottom: 0.5px solid #ffffff; /* Indicador debajo del enlace */
+}
+
+/* Main Section */
+main {
+    padding: 3rem 0;
+}
+
+.welcome-section {
+    background: white;
+    margin: 20px auto;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.welcome-section h2 {
+    font-size: 1.8rem;
+    color: #E3AADD;
+    margin-bottom: 0.5rem;
+}
+
+.welcome-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Login & Registro Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.login-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+.login-card h1 {
+    color: #E3AADD;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center; /* Alinea el ícono y el input verticalmente */
+    gap: 10px; /* Añade espacio entre el ícono y el input */
+}
+
+.form-group i {
+    font-size: 1.5rem; /* Asegúrate de que el tamaño del ícono sea consistente */
+    color: #C8A8E9;
+    margin-left: 10px; /* Agrega un pequeño margen izquierdo para más espacio si es necesario */
+}
+
+.form-group input {
+    flex: 1; /* El input se ajustará automáticamente al espacio disponible */
+    padding: 0.8rem;
+    border-radius: 12px;
+    border: 1px solid #C8A8E9;
+    outline: none;
+    font-size: 1rem;
+    color: #444;
+    background: #f4e7fb74;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.btn {
+    background: #C8A8E9;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #E3AADD;
+    transform: scale(1.05);
+}
+
+.redirect {
+    margin-top: 1rem;
+    color: #555;
+}
+
+.redirect a {
+    color: #C8A8E9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redirect a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #C3C7F4;
+    color: #444;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 24px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+/* Estilo del logo */
+.login-logo {
+    width: 100px;
+    margin: 0 auto 1rem;
+    display: block;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Centrado de contenido */
+.login-card h1 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+/* Acerca de Nosotros */
+.about-section {
+    background: linear-gradient(135deg, #F4E7FB, #F2DDDC);
+    padding: 3rem 2rem;
+    color: #444;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-horizontal-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite ajuste en pantallas pequeñas */
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #160c0c;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-size: 1rem;
+}
+
+.map-container {
+    flex: 1;
+    text-align: center;
+    max-width: 600px;
+}
+
+.map-container h2 {
+    font-size: 2rem;
+    color: #3b0528;
+    margin-bottom: 1rem;
+}
+
+#map-placeholder {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    background: #E3AADD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#map-placeholder:hover {
+    transform: scale(1.02);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .about-horizontal-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .map-container,
+    .about-content {
+        max-width: 100%;
+    }
+
+    #map-placeholder {
+        height: 250px;
+    }
+}
+
+
+/* Productos Section */
+.products-section {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #F4E7FB, #F2DDDC);
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2rem;
+    color: #291427;
+    margin-bottom: 1rem;
+}
+
+.products-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Productos Container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    color: #094a49;
+    margin: 1rem 0;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 1rem 1rem;
+}
+
+.product-card .btn {
+    background: #C8A8E9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background: #E3AADD;
+}
+.nutrition-info {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* General centering and hidden class */
+.hidden {
+    display: none;
+}
+
+/* Adjust login and register card layout */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 2rem;
+}
+
+.login-card {
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+    margin: 0 1rem;
+}
+/* Weather Widget */
+.weather-widget {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 10;
+    width: 200px;
+}
+
+/* Weather Widget */
+.weather-widget {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    background: linear-gradient(135deg, #e3aadd8c, #c9a8e969);
+    border-radius: 22px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    z-index: 10;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.weather-widget h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.weather-widget #weather-info {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.weather-widget p {
+    margin: 0.5rem 0;
+}
+
+/* Clima Icon */
+.weather-widget i {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.search-section h2 {
+    font-size: 2rem;
+    color: #281426;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.search-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.search-bar input {
+    width: 50%;
+    max-width: 400px;
+    padding: 0.8rem;
+    border-radius: 12px;
+    border: 1px solid #C8A8E9;
+    font-size: 1rem;
+    outline: none;
+    background: #f4e7fb74;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 8px #E3AADD;
+}
+
+.search-bar .btn {
+    background: #C8A8E9;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar .btn:hover {
+    background: #E3AADD;
+    transform: scale(1.05);
+}
+
+/* Map Box */
+.map-box {
+    width: 90%;
+    max-width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #C8A8E9;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background: #f4e7fb74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.map-placeholder {
+    font-size: 1rem;
+    color: #340909;
+    text-align: center;
+}
+
+.order-section {
+    padding: 3rem 2rem;
+    background: white;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    text-align: left;
+}
+
+.order-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.order-info, .delivery-info {
+    background: #F4E7FB;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.order-info h4, .delivery-info h3 {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #C8A8E9;
+}
+
+.order-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.order-info ul li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.map-placeholder1 {
+    background: #E3AADD;
+    border-radius: 12px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.payment-section {
+    margin-top: 2rem;
+    text-align: center;
+    background: #F2DDDC;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.payment-section p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.pay-btn {
+    background: #C8A8E9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pay-btn:hover {
+    background: #E3AADD;
+    transform: scale(1.05);
+}
+/* Contenedor del botón "Regresar a Menú" */
+.menu-back-container {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #E3AADD;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #18020F;
+    transform: scale(1.05);
+}
+.btn {
+    display: inline-block;
+    background-color: #C8A8E9;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #E3AADD;
+    transform: scale(1.05);
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
