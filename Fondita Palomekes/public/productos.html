@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Palomeke's Inn</title>
+    <link rel="icon" href="images/1111.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Palomeke's Inn</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="busqueda.html">Búsqueda</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- API de Clima -->
+        <div class="weather-widget">
+            <h3>Clima Actual</h3>
+            <div id="weather-info">
+                <p>Cargando...</p>
+            </div>
+        </div>
+
+        <section class="products-section">
+            <h2>Catálogo de Productos</h2>
+            <p>Descubre nuestras opciones de desayunos completos para todos los gustos.</p>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="images/desayuno Palomekes´s.jpg" alt="mel">
+                    <h3>Desayuno Palomeke's</h3>
+                    <p>Incluye huevos, tocino, pan tostado y jugo de naranja.</p>
+                    <p class="nutrition-info">Proteínas: 56g</p>
+                    <a href="pago.html?producto=Palomeke's&descripcion=Huevos,%20tocino,%20pan%20tostado%20y%20jugo%20de%20naranja&proteinas=56g&calorias=450&grasas=20g&carbohidratos=35g" class="btn">Pedir</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/desayuno canadiense .jpg" alt="aaron">
+                    <h3>Desayuno Canadiense</h3>
+                    <p>Incluye hotcakes, tocino y miel de maple.</p>
+                    <p class="nutrition-info">Proteínas: 60g</p>
+                    <a href="pago.html?producto=Canadiense&descripcion=Hotcakes,%20tocino%20y%20miel%20de%20maple&proteinas=60g&calorias=500&grasas=25g&carbohidratos=40g" class="btn">Pedir</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/desayuno mexicano.jpg" alt="posadin">
+                    <h3>Desayuno Mexicano</h3>
+                    <p>Incluye chilaquiles, frijoles y salsa fresca.</p>
+                    <p class="nutrition-info">Proteínas: 52g</p>
+                    <a href="pago.html?producto=Mexicano&descripcion=Chilaquiles,%20frijoles%20y%20salsa%20fresca&proteinas=52g&calorias=400&grasas=15g&carbohidratos=45g" class="btn">Pedir</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/desayuno vegano.jpg" alt="sotin">
+                    <h3>Desayuno Vegano</h3>
+                    <p>Avena, frutos secos, yogurt y miel.</p>
+                    <p class="nutrition-info">Proteínas: 58g</p>
+                    <a href="pago.html?producto=Vegano&descripcion=Avena,%20frutos%20secos,%20yogurt%20y%20miel&proteinas=58g&calorias=300&grasas=10g&carbohidratos=50g" class="btn">Pedir</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Palomeke's Inn - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <script src="js/clima.js"></script>
+</body>
+</html>

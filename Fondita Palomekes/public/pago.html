@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Pedido - Palomeke's Inn</title>
+    <link rel="icon" href="1111.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="acerca-page">
+    <header>
+        <div class="container">
+            <h1>Palomeke's Inn</h1>
+            <div class="weather-widget">
+                <h3>Clima Actual</h3>
+                <div id="weather-info">
+                    <p>Cargando...</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="menu-back-container">
+            <a href="productos.html" class="btn-back">Regresar a Menú</a>
+        </div>
+        <section class="order-section">
+            <h2>Confirmar Pedido</h2>
+            <div class="order-details">
+                <div class="order-info">
+                    <!-- Este contenido será dinámico -->
+                </div>
+                <div class="delivery-info">
+                    <h3>Ubicación de Entrega</h3>
+                    <p class="search-description">Selecciona tu ubicación o busca una dirección.</p>
+                
+                    <!-- Barra de búsqueda -->
+                    <div class="search-bar">
+                        <input type="text" id="address-input" placeholder="Buscar dirección...">
+                        <button id="search-button" class="btn">Buscar</button>
+                    </div>
+                
+                    <!-- Contenedor del mapa -->
+                    <div id="map" class="map-box" style="height: 300px;"></div>
+                </div>
+            </div>
+            <div class="payment-section">
+                <h3>Pago</h3>
+                <p>Total a pagar: <strong id="total-price">$120 MXN</strong></p>
+                <button class="btn pay-btn" id="pay-now-btn">Pagar Ahora</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Palomeke's Inn - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAUZuSlHgiC5ob27XIkzHbRJpHHU51RfY&libraries=places"></script>
+    <!-- OpenPay Checkout Script -->
+    <script src="https://openpay.s3.amazonaws.com/openpay.v1.min.js"></script>
+    <script src="https://openpay.s3.amazonaws.com/openpay-data.v1.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/clima.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

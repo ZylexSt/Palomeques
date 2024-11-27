@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda - Palomeke's Inn</title>
+    <link rel="icon" href="images/1111.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Palomeke's Inn</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="busqueda.html" class="active">Búsqueda</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- API de Clima -->
+        <div class="weather-widget">
+            <h3>Clima Actual</h3>
+            <div id="weather-info">
+                <p>Cargando...</p>
+            </div>
+        </div>
+
+        <!-- Sección de Mapa -->
+        <section class="search-section">
+            <h2>Búsqueda de Puntos de Entrega</h2>
+            <p class="search-description">
+                Selecciona un punto en el mapa o busca lugares cercanos.
+            </p>
+
+            <!-- Barra de búsqueda -->
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar lugares cercanos...">
+                <button id="search-button" class="btn">Buscar</button>
+            </div>
+
+            <!-- Contenedor del Mapa -->
+            <div id="map" class="map-box" style="width: 100%; height: 500px;"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Palomeke's Inn - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAUZuSlHgiC5ob27XIkzHbRJpHHU51RfY&libraries=places"></script>
+    <script src="js/clima.js"></script>
+    <script src="js/busqueda.js"></script>
+</body>
+</html>
